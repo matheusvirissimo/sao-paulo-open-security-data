@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminalidade em São Paulo - 2025</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Carregando dados de criminalidade...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1>CRIMINALIDADE EM SÃO PAULO</h1>
+            <p class="subtitle">Visualização interativa de ocorrências criminais - 2025</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar com Estatísticas -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Estatísticas Gerais</h2>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalCrimes">0</div>
+                    <div class="stat-label">Total de Ocorrências</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="filteredCrimes">0</div>
+                    <div class="stat-label">Ocorrências Exibidas</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Filtros</h2>
+                
+                <div class="filter-box">
+                    <label>Tipo de Crime</label>
+                    <select id="crimeFilter" class="filter-select">
+                        <option value="todos">Todos os Crimes</option>
+                    </select>
+                </div>
+
+                <div class="filter-box">
+                    <label>Município</label>
+                    <select id="municipioFilter" class="filter-select">
+                        <option value="todos">Todos os Municípios</option>
+                    </select>
+                </div>
+
+                <button id="resetBtn" class="btn-reset">Limpar Filtros</button>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Top 5 Crimes</h2>
+                <div id="topCrimes" class="ranking-list">
+                    <p class="loading-text">Carregando...</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Top 5 Municípios</h2>
+                <div id="topMunicipios" class="ranking-list">
+                    <p class="loading-text">Carregando...</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Map Container -->
+        <main class="map-container">
+            <div id="map"></div>
+            
+            <!-- Info Box -->
+            <div class="info-box">
+                <h3>📍 Como usar</h3>
+                <ul>
+                    <li>Clique nos pontos para ver detalhes do crime</li>
+                    <li>Use os filtros à esquerda para explorar</li>
+                    <li>Zoom e navegue pelo mapa livremente</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p><strong>Fonte:</strong> Secretaria de Segurança Pública do Estado de São Paulo (SSP-SP)</p>
+            <p><strong>Projeto:</strong> Banco de Dados II - Pipeline ETL de Análise de Criminalidade</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="leaflet.js"></script>
+</body>
+</html>
