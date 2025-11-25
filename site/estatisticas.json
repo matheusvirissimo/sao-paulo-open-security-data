@@ -1,0 +1,78 @@
+{
+  "total_crimes": 637016,
+  "data_geracao": "2025-11-24 04:58:45",
+  "categorias": {
+    "Crimes Patrimoniais": 482835,
+    "Outros": 100512,
+    "Crimes de Trânsito": 53669
+  },
+  "tipos_crime_unicos": 22,
+  "top_crimes": {
+    "FURTO - OUTROS": 304474,
+    "ROUBO - OUTROS": 104503,
+    "FURTO DE VEÍCULO": 54047,
+    "LESÃO CORPORAL DOLOSA": 53306,
+    "LESÃO CORPORAL CULPOSA POR ACIDENTE DE TRÂNSITO": 50791,
+    "TRÁFICO DE ENTORPECENTES": 26629,
+    "ROUBO DE VEÍCULO": 16901,
+    "PORTE DE ENTORPECENTES": 8595,
+    "APREENSÃO DE ENTORPECENTES": 4068,
+    "HOMICÍDIO CULPOSO POR ACIDENTE DE TRÂNSITO": 2851,
+    "PORTE DE ARMA": 2789,
+    "ROUBO DE CARGA": 2597,
+    "TENTATIVA DE HOMICÍDIO": 1789,
+    "LESÃO CORPORAL CULPOSA - OUTRAS": 1688,
+    "HOMICÍDIO DOLOSO": 1305
+  },
+  "municipios_unicos": 643,
+  "top_municipios": {
+    "S.PAULO": 288459,
+    "CAMPINAS": 19641,
+    "GUARULHOS": 18225,
+    "S.ANDRE": 13795,
+    "S.BERNARDO DO CAMPO": 11206,
+    "OSASCO": 10511,
+    "RIBEIRAO PRETO": 9676,
+    "SOROCABA": 7717,
+    "S.JOSE DO RIO PRETO": 6825,
+    "PRAIA GRANDE": 6640,
+    "SANTOS": 6474,
+    "S.JOSE DOS CAMPOS": 5863,
+    "S.VICENTE": 5807,
+    "DIADEMA": 5741,
+    "MAUA": 4846
+  },
+  "top_bairros": {
+    "CENTRO": 38484,
+    "RURAL": 8091,
+    "PINHEIROS": 6411,
+    "Centro": 6086,
+    "BELA VISTA": 5194,
+    "VILA MARIANA": 5013,
+    "SANTO AMARO": 5005,
+    "REPUBLICA": 4692,
+    "SANTANA": 4684,
+    "ITAIM BIBI": 4490,
+    "CAPAO REDONDO": 4294,
+    "TATUAPE": 4026,
+    "IPIRANGA": 3936,
+    "AREA RURAL": 3933,
+    "JARDIM PAULISTA": 3910
+  },
+  "periodo": {
+    "ano_inicio": 2025,
+    "ano_fim": 2025,
+    "mes_inicio": 1,
+    "mes_fim": 9
+  },
+  "crimes_por_dia_semana": {
+    "Friday": 97631,
+    "Thursday": 95949,
+    "Wednesday": 95590,
+    "Tuesday": 94689,
+    "Saturday": 89198,
+    "Monday": 87505,
+    "Sunday": 76447,
+    "": 7
+  }
+}
